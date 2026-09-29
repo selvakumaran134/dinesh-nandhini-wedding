@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dinesh & Nandhini — Wedding Invitation</title>
+<meta property="og:title" content="Dinesh & Nandhini — 20 November 2026"><meta property="og:image" content="assets/preview.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Noto+Sans+Tamil:wght@400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="fx"></canvas>
+<section id="lock"><div class="lockbg"></div>
+<div class="lockin"><div class="clock" id="clk">9:41</div><div class="mono">D <i>&</i> N</div><p class="names">Dinesh ❤️ Nandhini</p></div>
+<button class="unlock" id="unlockBtn">Tap to Unlock ❤️<span></span></button></section>
+
+<main id="app" hidden>
+<button id="music" class="glass" aria-label="Music off" aria-pressed="false"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="musicTxt">Music Off</span></button>
+<section id="home" class="scr"><h1>Dinesh &amp; Nandhini</h1>
+<img class="stk float" src="assets/couple1.webp" alt="Dinesh and Nandhini" width="420">
+<p class="tag">Two Hearts • One Beautiful Journey</p>
+<div class="grid">
+<a class="ico glass" href="#invite">💌<b>Invitation</b></a><a class="ico glass" href="#date">📅<b>Wedding Date</b></a>
+<a class="ico glass" href="#venue">📍<b>Venue</b></a><a class="ico glass" href="#couple">👰<b>Bride</b></a>
+<a class="ico glass" href="#couple">🤵<b>Groom</b></a><a class="ico glass" href="#final">❤️<b>Our Story</b></a></div></section>
+
+<section id="couple" class="scr"><h2>The Couple</h2>
+<div class="pair"><div class="rv card glass"><h3>V. Dinesh</h3><p>BCA</p></div><span class="heart">❤️</span><div class="rv card glass d2"><h3>V. Nandhini</h3><p>B.A.</p></div></div>
+<img class="stk rv" src="assets/couple2.webp" alt="Couple" width="340">
+<p class="quote">Together begins a beautiful forever.</p></section>
+
+<section id="invite" class="scr"><h2>Wedding Invitation</h2>
+<div id="inviteCard" class="card glass rv"><img id="invThumb" src="assets/invitation.png" alt="Original wedding invitation (patrika)" width="1536" height="1023" loading="lazy"><small>Tap to open full screen</small></div>
+<button class="btn" id="openInv">View Original Invitation</button>
+<div id="famCard" class="card glass rv tamil"></div></section>
+
+<section id="date" class="scr"><h2>A Little Surprise ✨</h2><p class="sub">Scratch to reveal our special day ❤️</p>
+<div id="scratchWrap"><div id="reveal"><small>Friday</small><strong>20 NOVEMBER 2026</strong></div><canvas id="scratch"></canvas></div>
+<div id="details" class="cards"></div></section>
+
+<section id="venue" class="scr"><h2>Wedding Venue</h2><div id="venueCard" class="card glass rv"></div>
+<a id="mapBtn" class="btn" target="_blank" rel="noopener">📍 Open in Google Maps</a>
+<h2>Wedding Reception</h2><div id="recCard" class="card glass rv"></div>
+<a id="recMapBtn" class="btn" target="_blank" rel="noopener">📍 Open Reception in Google Maps</a>
+<img class="stk rv" src="assets/couple3.webp" alt="Dinesh and Nandhini" width="300" height="342" loading="lazy"></section>
+
+<section id="rsvp" class="scr"><h2>Will You Join Us? ❤️</h2><p class="sub">Let us know you're coming</p>
+<div id="rsvpBox" class="card glass rv"><div id="rsvpForm">
+<label for="gName">Guest Name</label><input id="gName" type="text" maxlength="80" autocomplete="name" placeholder="Enter your name">
+<span class="lbl">I will attend</span>
+<div class="seg" role="radiogroup" aria-label="Attendance"><label><input type="radio" name="att" value="marriage"><b>Marriage</b></label><label><input type="radio" name="att" value="reception"><b>Reception</b></label><label><input type="radio" name="att" value="both" checked><b>Both</b></label></div>
+<span class="lbl">Number of Guests</span>
+<div class="step"><button type="button" id="gMinus" aria-label="Fewer guests">−</button><output id="gNum">2</output><button type="button" id="gPlus" aria-label="More guests">+</button></div>
+<input id="hp" class="hp" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+<p id="rsvpErr" class="err" role="alert"></p>
+<button class="btn" id="rsvpBtn" type="button">❤️ Confirm Attendance</button></div>
+<div id="rsvpDone" hidden><div class="bigheart">💖</div><h3 id="doneT">Thank you!</h3><p id="doneP"></p><small id="doneN"></small><button class="link" id="again" type="button">Add another response</button></div></div>
+<div id="countCard" class="card glass rv"><h3>👨‍👩‍👧‍👦 Guest Count</h3>
+<div class="cnt"><div><small>Marriage</small><b id="cM">–</b><em>Guests</em></div><div><small>Reception</small><b id="cR">–</b><em>Guests</em></div><div><small>Both</small><b id="cB">–</b><em>Guests</em></div></div>
+<p class="tot">Total: <b id="cT">–</b> guests</p><small id="cNote"></small></div></section>
+
+<section id="final" class="scr"><img class="stk float big" src="assets/final-couple.webp" alt="Nandhini playfully pulling Dinesh's garland">
+<h2>Dinesh ❤️ Nandhini</h2><p class="quote">Together Forever</p><p class="sub">Thank you for being a part of our special day.</p></section>
+</main>
+
+<nav id="nav" class="glass" hidden><a href="#home">🏠<i>Home</i></a><a href="#invite">💌<i>Invite</i></a><a href="#date">📅<i>Date</i></a><a href="#venue">📍<i>Venue</i></a><a href="#rsvp">✅<i>RSVP</i></a><a href="#final">❤️<i>More</i></a></nav>
+
+<div id="lb" hidden><button id="lbx">✕</button><div id="lbctl"><button id="zo">−</button><button id="zi">+</button></div><img id="lbimg" src="assets/invitation.png" alt="Original invitation"></div>
+<audio id="aud" src="assets/music.mp3" loop preload="none"></audio>
+<script src="script.js"></script></body></html>
